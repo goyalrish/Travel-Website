@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   font-family:'josefin Sans',sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+
+    /* a = alpha(opacity) */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)), url(images/taj3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+nav {
+    width: 100%;
+    height: 15vh;
+    background:rgba(0, 0, 0, 0.2);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+nav .logo {
+    text-align:center;
+    width: 25%;
+}
+
+nav h1.split{
+    color: #00b894;
+}
+
+nav .menu {
+    width: 40%;
+    /* text-align: center; */
+    display: flex;
+    justify-content: space-around;
+}
+
+nav .menu a {
+    width: 25%;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav .menu a:first-child{
+    color: #00b894;
+    /* text-shadow: 0.3px 0.3px 0.5px white; */
+}
+main{
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color: white;
+}
+
+section{
+
+}
+
+section h3{
+    font-size: 35px;
+    font-weight: 200;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 3px black;
+}
+
+section h1{
+    /* top right bottom left */
+    margin: 30px 0px  20px 0px;  
+    font-weight: 700;
+    font-size: 55px;
+
+    
+    /* hori vert blur color */
+    text-shadow: 2px 1px 5px black;  
+    text-transform:uppercase ;
+}
+
+section p{
+    font-size: 25px;
+    word-spacing: 2px;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 1px black;
+}
+
+section a{
+    /* padding: 12px 25px; */
+    border-radius: 4px;
+    outline: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: all .5s ease;
+}
+
+section .btn1{
+    background-color: white;
+    color: black;
+    padding: 12px 25px;
+}
+
+.btn1:hover{
+    background-color:  #00b894;
+    color: white;
+}
+ .btn2:hover{
+    background-color: white;
+    color: black;
+ }
+section .btn2{
+    background-color:  #00b894;
+    color: white;
+    padding: 12px 48px;
+}
+
+/* animated words */
+.change_content::after{
+    content: '';
+    animation: changetext 10s infinite linear;
+    color: #00b894;
+}
+
+@keyframes changetext{
+    0%{content: "DARJEELING";}
+    20%{content: "agra";}
+    35%{content: "jaipur";}
+    60%{content: "kerala";}
+    80%{content: "delhi";}
+    100%{content: "mumbai";}
+}
+
